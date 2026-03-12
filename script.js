@@ -33,6 +33,19 @@ result += "<br>✅ Safe! Debar nahi hoge.";
 
 }
 
+let maxBunk = Math.floor((present / 0.75) - total);
+
+if(maxBunk > 0){
+
+result += "<br><br>😎 Tum aur " + maxBunk + " classes bunk kar sakte ho.";
+
+}
+else{
+
+result += "<br><br>🚫 Ab bunk mat karo, attendance risk me hai.";
+
+}
+
 document.getElementById("output").innerHTML = result;
 
 }
